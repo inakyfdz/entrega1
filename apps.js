@@ -18,7 +18,5 @@ botonDesafio2.addEventListener("click", async () => {
 
 
 botonDesafio3.addEventListener("click", async () => {
-
-    await import("./Desafios/desafio3.js");
-
+    
 });
