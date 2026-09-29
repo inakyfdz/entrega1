@@ -5,20 +5,20 @@ const botonDesafio3 = document.getElementById("btnDesafio3");
 
 botonDesafio1.addEventListener("click", async () => {
 
-    await import("./Desafios/desafio1");
+    await import("./Desafios/desafio1.js");
 
 });
 
 
 botonDesafio2.addEventListener("click", async () => {
 
-    await import("./Desafios/desafio2");
+    await import("./Desafios/desafio2.js");
 
 });
 
 
 botonDesafio3.addEventListener("click", async () => {
 
-    await import("./Desafios/desafio3");
+    await import("./Desafios/desafio3.js");
 
 });
