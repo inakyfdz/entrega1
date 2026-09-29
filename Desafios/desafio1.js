@@ -20,7 +20,7 @@ for (let i = 0; i < 4; i++) {
 
 nJugadas = 15;
 
-if (puntosBlancas % 2 == 0){
+if (puntosBlancas % 2 === 0){
     turno = "Turno de las negras"
 }else{
     turno = "Turno de las blancas"
