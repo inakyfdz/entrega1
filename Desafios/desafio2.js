@@ -8,6 +8,8 @@ let pieza = "";
 let FilaDestinoBlancas = 8;
 let FilaDestinoNegras = 1;
 let piezaPromocionada = "";
+
+//hecho asi para ver si funciona seria un let colorPeon = "";
 const peonNegras = "Negro";
 const peonBlancas = "Blancas";
 
