@@ -15,6 +15,7 @@ const peonBlancas = "Blancas";
 
 
                 //Programacion
+//Verifica si el rey puede enrocarse
 if(!reyMovido && !torreMovida && !enJaque){
     console.log("Se puede hacer enroque ")
 }else{
@@ -23,7 +24,7 @@ if(!reyMovido && !torreMovida && !enJaque){
 
                 //Switch
 pieza = "torre";
-
+//Dada una pieza te indica como puede moverse
 switch(pieza){
     case "peon":
         console.log("Se mueve hacia delante y captura en diagonal);")
@@ -48,6 +49,7 @@ switch(pieza){
 }
 
                 //promocion
+//Dada la llegada de un peon a la casilla 8, verifica si es negro o blanco y lo transforma en dama.
 if(peonBlancas === 'Blancas'){
     piezaPromocionada = FilaDestinoBlancas === 8 ? "♕" : "♙";
 }else if(peonNegras === 'Negras'){

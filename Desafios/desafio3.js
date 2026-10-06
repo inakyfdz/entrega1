@@ -21,7 +21,7 @@ let jugadas = [
 
 
                 //Generar tablero
-
+//Bucle anidado que genera la estructura del tablero
 for(let fila = 8; fila >= 1; fila--){
 
     for(let i = 0; i < 8; i++){
@@ -40,7 +40,7 @@ for(let fila = 8; fila >= 1; fila--){
 
 
                 //Recorrer jugadas
-
+//Bucle que recorre e imprime el array de jugadas. En el caso de comenzar con '//', la jugada es considerada comentario y no se imprime. El codigo terminaua vez llegue a la jugada 'Jaque mate'.
 for(const jugada of jugadas){
 
 

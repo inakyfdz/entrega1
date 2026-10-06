@@ -3,6 +3,9 @@ const botonDesafio2 = document.getElementById("btnDesafio2");
 const botonDesafio3 = document.getElementById("btnDesafio3");
 
 //recordar poner los tipos de archivos
+//recordar recordar poner los tipos de archivos
+
+//Codigo principal que permite ejecutar en el HTML los ejercicios.
 botonDesafio1.addEventListener("click", async () => {
 
     await import("./Desafios/desafio1.js");
