@@ -22,6 +22,9 @@ let jugadas = [
 
                 //Generar tablero
 //Bucle anidado que genera la estructura del tablero
+                // Comentario del autor: Sí. El bucle de fuera recorre las filas de la 8 a la 1 y
+                // el de dentro las columnas de la a a la h. El color sale de la suma fila + posición de la columna:
+                // si es par, casilla clara; si no, oscura.
 for(let fila = 8; fila >= 1; fila--){
 
     for(let i = 0; i < 8; i++){
@@ -41,6 +44,9 @@ for(let fila = 8; fila >= 1; fila--){
 
                 //Recorrer jugadas
 //Bucle que recorre e imprime el array de jugadas. En el caso de comenzar con '//', la jugada es considerada comentario y no se imprime. El codigo terminaua vez llegue a la jugada 'Jaque mate'.
+                // Comentario del autor: Exacto: con continue se salta la línea de comentario y con break termina al
+                // llegar a "Jaque mate".
+
 for(const jugada of jugadas){
 
 

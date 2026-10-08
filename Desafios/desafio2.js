@@ -10,12 +10,14 @@ let FilaDestinoNegras = 1;
 let piezaPromocionada = "";
 
 //hecho asi para ver si funciona seria un let colorPeon = "";
-const peonNegras = "Negro";
+const peonNegras = "Negras";
 const peonBlancas = "Blancas";
 
 
                 //Programacion
 //Verifica si el rey puede enrocarse
+                // Comentario del autor: Sí, solo si ni el rey ni la torre se han movido y no está en jaque.
+                // Es una versión simplificada y lo que pedia el jercicio: no comprueba que las casillas entre ambos estén libres.
 if(!reyMovido && !torreMovida && !enJaque){
     console.log("Se puede hacer enroque ")
 }else{
@@ -25,14 +27,16 @@ if(!reyMovido && !torreMovida && !enJaque){
                 //Switch
 pieza = "torre";
 //Dada una pieza te indica como puede moverse
+                // Comentario del autor/a: Correcto. tengo un fallo mío: "cabalallo" está mal escrito ya lo corrijo
+
 switch(pieza){
     case "peon":
-        console.log("Se mueve hacia delante y captura en diagonal);")
+        console.log("Se mueve hacia delante y captura en diagonal)");
         break;
     case "torre":
         console.log("Se mueve en línea recta, horizontal o verticalmente");
         break;
-    case "cabalallo":
+    case "cababallo":
         console.log("Se mueve en forma de L");
         break;
     case "alfil":
@@ -50,6 +54,7 @@ switch(pieza){
 
                 //promocion
 //Dada la llegada de un peon a la casilla 8, verifica si es negro o blanco y lo transforma en dama.
+                // Comentario del autor/a: Casi: las blancas promocionan en la fila 8 y las negras en la 1.
 if(peonBlancas === 'Blancas'){
     piezaPromocionada = FilaDestinoBlancas === 8 ? "♕" : "♙";
 }else if(peonNegras === 'Negras'){
